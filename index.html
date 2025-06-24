@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sentiment Analyzer | Aryan Giri Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+      color: #1e293b;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: left;
+      display: inline-block;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: #2563eb;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .links a {
+      display: block;
+      margin: 0.3rem 0;
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding: 2rem 1rem;
+      text-align: center;
+      background-color: #e2e8f0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sentiment Analyzer</h1>
+    <p>Real-Time Customer Feedback Intelligence</p>
+  </header>
+
+  <div class="container">
+    <h2>Project Overview</h2>
+    <p>
+      Sentiment Analyzer is a production-ready application designed to help organizations understand and act on customer feedback in real time.
+      Using a fully serverless architecture built on AWS, the platform analyzes sentiment using natural language processing and provides
+      live visual feedback through a React-based dashboard. The solution is scalable, cost-effective, and highly actionable—designed for businesses that value customer experience.
+    </p>
+
+    <h2>Technologies & Services</h2>
+    <p>
+      React.js (Frontend) · AWS Lambda (Node.js/Python) · Amazon Comprehend (NLP) · Amazon API Gateway · DynamoDB · Amazon SES · AWS S3 + CloudFront
+    </p>
+
+    <h2>Architecture Overview</h2>
+    <p>
+      Feedback is submitted via a web form hosted on AWS S3. The data is processed through Amazon API Gateway and AWS Lambda,
+      where sentiment analysis is performed using Amazon Comprehend. The results are stored in DynamoDB. If a negative sentiment is detected,
+      an alert email is automatically triggered through Amazon SES. An interactive React dashboard fetches and visualizes the data for real-time insights.
+    </p>
+
+    <h2>Live Links</h2>
+    <div class="links">
+      <a href="https://your-form-url" target="_blank">Submit Feedback (Live Form)</a>
+      <a href="https://your-dashboard-url" target="_blank">View Sentiment Dashboard</a>
+      <a href="https://github.com/aryangirii/feedback-dashboard" target="_blank">View Source Code (GitHub)</a>
+    </div>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>Real-time sentiment classification using Amazon Comprehend</li>
+      <li>Automated email alerts for negative feedback using Amazon SES</li>
+      <li>Serverless architecture for scalability and low maintenance</li>
+      <li>Interactive React dashboard with sentiment charts and summaries</li>
+      <li>Secure, persistent storage in DynamoDB</li>
+      <li>Modern UI with light/dark mode support</li>
+    </ul>
+
+    <h2>Impact</h2>
+    <p>
+      This solution addresses a real-world business need: transforming raw customer feedback into meaningful insights.
+      With real-time alerting and sentiment trends, it enables product and support teams to proactively address concerns
+      and improve user satisfaction.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2025 Aryan Giri | Built with AWS & React
+  </footer>
+
+</body>
+</html>
